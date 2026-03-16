@@ -1,21 +1,117 @@
 body {
-  font-family:
-    Courier New,
-    sans-serif;
-  background: #f5f5f5;
-  padding: 20px;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  font-family: Inter, sans-serif;
+  /*padding: 40px 40px 40px;*/
+  margin: 0px;
+  background: #f3f4f6;
+}
+.name {
+  font-size: 20px;
+  font-style: italic;
+}
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 2px 0;
 }
 
-h1 {
-  color: #2563eb;
+.nav-content {
+  max-width: 1900px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-button {
+.nav-links {
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+.about_me {
+  display: grid;
+  margin: 60px auto;
+  grid-template-columns: 2fr 1fr;
+  /* grid-template-rows: auto auto auto auto;*/
+  gap: 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 1000px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  grid-column: 1 / 2;
+  font-family: Constantia;
+  font-weight: bold;
+  font-size: 60px;
+  color: #525252;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.bio {
+  line-height: 1.6;
+  font-size: 17px;
+  max-width: 600px;
+  grid-column: 1 / 2;
+  text-align: left;
+  margin-top: 0px;
+}
+
+blockquote {
+  grid-column: 1 / 3;
+  line-height: 1.4;
+  font-style: italic;
+  background: #faf9fb;
+  border-left: 4px solid #d0f542;
+  padding: 10px 10px;
+  margin: 0px;
+  font-style: italic;
+}
+
+cite {
+  display: block;
+  margin: 0 px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #5d6346;
+}
+
+.avatar {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  height: 450px;
+  width: 346.2px;
+  border-radius: 10px;
+}
+
+.connect {
+  grid-column: 1;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Montserrat";
   background: #2563eb;
   color: white;
   padding: 10px 20px;
-  border: none;
   border-radius: 6px;
   cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.connect:hover {
+  background: #1344ae;
 }
